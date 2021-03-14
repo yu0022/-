@@ -1,0 +1,963 @@
+@charset "utf-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+html {
+    font-size: 62.5%;
+}
+    /* スマホ版 */
+@media screen and (max-width: 768px) {  
+    .header {
+        position: absolute;
+        padding: 10px 4vw 0;
+        z-index: 1;
+        transition: .3s;
+   }
+   .header .header_name {
+       margin: 20px 15px;
+       font-size: 2.6rem;
+       letter-spacing: 1px;
+       font-family: Noto Serif;
+       font-style: Italic;
+       color: #fff;
+       transition: .3s;
+   }
+   .header .header_nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 600px;
+        background-color: #282F35;
+   }
+   .header  .nav_list_box {
+        margin-top: 200px;
+        height: 100%;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 50px;
+        align-items: center;
+   }
+   .header a {
+       color: #fff;
+       font-size: 16px;
+       line-height: 40px;
+       letter-spacing: .05em;
+       font-family: Noto Serif;
+       text-decoration: none;
+       transition: .3s;
+   }
+   .header .hamburger {
+       display: block;
+       width: 39px;
+       height: 39px;
+       position: absolute;
+       top: 30px;
+       right: -70%;
+       background-color: transparent;
+       border: none;
+       outline: none;
+       z-index: 100;
+   }
+   /* .header .ber {
+       width: 30px;
+       height: 3px;
+       display: block;
+       position: absolute;
+       right: -50%;
+       transform: translateX(-50%);
+       background-color: #fff;
+   } */
+   .header #top {
+       width: 30px;
+       height: 3px;
+       display: block;
+       position: absolute;
+       top: 10px;
+       left: -70%;
+       background-color: #fff;
+       margin-bottom: 8px;
+   }
+   .header #mid {
+       width: 30px;
+       height: 3px;
+       display: block;
+       position: absolute;
+       top: 20px;
+       left: -70%;
+       background-color: #fff;
+       margin-bottom: 8px;
+}
+   .header #bottom {
+       width: 30px;
+       height: 3px;
+       display: block;
+       position: absolute;
+       top: 30px;
+       left: -70%;
+       background-color: #fff;
+       margin-bottom: 8px;
+   }
+
+   .hamburger.cross #top {
+        opacity: 0;
+   }
+   .hamburger.cross #mid {
+        transform: rotate(45deg);
+   }
+   .hamburger.cross #bottom {
+       transform: rotate(-45deg) translate(6px,-8px);;
+   }
+
+   .fv {
+        position: relative;
+        height: 599px;
+        background-image: url("E:/クリスタ img/fv-bgi_01.jpg");
+        background-position: center;
+        background-size: cover;
+   }
+   .fv .en {
+        position: absolute;
+        top: 230px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 3.7rem;
+        font-family: Noto Serif;
+        color: #fff;
+}
+    .fv .ja {
+        position: absolute;
+        top: 330px;
+        display: block;
+        width: 100%;
+        line-height: 50px;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: Noto Serif JP;
+        color: #fff;
+    }
+   .fv img {
+       display: none;
+   }
+   .slick-arrow {
+       display: none !important;
+   }
+}
+/* PC版 */
+@media screen and (min-width: 768px) {
+    .header {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        transition: .3s;
+        z-index: 100;
+    }
+    .header .header_list {
+        
+        display: flex;
+        padding: 30px 20px;
+        max-width: 1850px;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        transition: all .5s;
+    }
+    .header .header_name {
+        margin-left: 70px;
+        font-size: 2.6rem;
+        letter-spacing: 1px;
+        font-family: Noto Serif;
+        font-style: italic;
+        color: #fff;
+        transition: .3s;
+    }
+    .header .nav_list_box {
+        display: flex;
+    }
+    .header a {
+        margin: 0 30px;
+        font-size: 1.6rem;
+        font-family: Noto Serif;
+        font-style: italic;
+        letter-spacing: 1px;
+        text-decoration: none;
+        color: #fff;
+        transition: .3s;
+    }
+    .header.fixed {
+        position: fixed;
+        background-color: #282F35;
+        padding: 30px;
+        width: 100%;
+        transition: .3s;
+    }
+
+    .fv {
+        position: relative;
+    }
+    .fv .en {
+        z-index: 2;
+        position: absolute;
+        top: 409px;
+        left: 124px;
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 7rem;
+        font-family: Noto Serif;
+        color: #fff;
+    }
+    .fv .ja {
+        z-index: 2;
+        position: absolute;
+        top: 520px;
+        left: 150px;
+        letter-spacing: 1.5px;
+        font-size: 4rem;
+        font-family: Noto Serif JP;
+        color: #fff;
+    }
+    .fv img {
+        width: 100%;
+        height: 750px;
+        object-fit: cover;
+    }
+    .header .hamburger {
+        display: none;
+    }
+    .header .fixed {
+        position: fixed;
+        background-color: #282F35;
+        padding: 30px;
+        width: 100%;
+        transition: .3s;
+    }
+    .slick-arrow {
+        display: none !important;
+    }
+}
+/* スマホ版 */
+@media screen and (max-width: 768px) {
+    .sec01 {
+        padding: 100px 0 40px;
+    }
+    .sec01 .concept_box {
+        margin: 0 15px;
+    }
+    .sec01 .concept {
+        position: relative;
+        font-size: 3rem;
+        font-family: Noto Serif;
+        font-style: Italic;
+        letter-spacing: 1.5px;
+    }
+    .sec01 .concept::before {
+        content: "";
+        display: inline-block;
+        width: 90px;
+        height: 5px;
+        background-color: #000;
+        position: absolute;
+        top: 10px;
+        left: 200px;
+    }
+    .sec01 .work {
+        text-align: center;
+        margin: 51px 0 31px;
+        font-size: 2rem;
+        line-height: 30px;
+        font-weight: bold;
+    }
+    .sec01 .concept_list1 {
+        text-align: left;
+        font-weight: bold;
+        line-height: 35px;
+        font-size: 1.6rem;
+    }
+    .sec01 img {
+        display: block;
+        width: 100%;
+        margin: 50px auto 70px;
+        text-align: center;
+    }
+    .sec01 .skele {
+        text-align: right;
+        letter-spacing: 2px;
+        opacity: 10%;
+        font-size: 4rem;
+        font-weight: bold;
+        color: #171717;
+    }
+}
+/* PC版 */
+@media screen and (min-width: 768px) {
+    .sec01 {
+        max-width: 1100px;
+        padding: 100px 120px 70px 220px;
+        margin: 0 auto;
+    }
+    .sec01 .concept {
+        position: relative;
+        font-size: 6rem;
+        letter-spacing: 3.6px;
+        font-style: italic;
+        font-family: Noto serif;
+    }
+    .sec01 .concept::after {
+        content: "";
+        display: inline-block;
+        width: 200px;
+        height: 5px;
+        background-color: #000;
+        position: absolute;
+        top: 30px;
+        left: 600px;
+    }
+    .sec01 .work {
+        margin: 70px 0 60px;
+        text-align: center;
+        letter-spacing: 0.9px;
+        font-size: 3rem;
+        line-height: 50px;
+        font-family: Noto serif JP;
+    }
+    .sec01 .concept_list {
+        height: 40vh;
+        justify-content: space-between;
+        display: flex;
+    }
+    .sec01 .concept_list1 {
+        max-width: 550px;
+        margin-top: 40px;
+        letter-spacing: 0.05em;
+        font-size: 1.6rem;
+        line-height: 30px;
+        font-weight: bold;
+    }
+    .sec01 img {
+        height: 20vh;
+        max-width: 600px;
+        margin: 0 100px 70px 30px;
+    }
+    .sec01 .skele {
+        text-align: right;
+        opacity: 10%;
+        letter-spacing: 0.05em;
+        font-size: 9rem;
+        font-family: Noto serif;
+    }
+}
+/* スマホ版 */
+@media screen and (max-width: 768px) {
+    .sec02 {
+        position: relative;
+        padding: 100px 15px 40px;
+        background-image: url("E:/クリスタ img/fv-bgi_02.jpg");
+        background-position: top;
+        background-size: cover;
+    }
+    .sec02::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 50%;
+        background-color: #000;
+    }
+    .sec02 .works_box {
+        z-index: 1;
+        position: relative;
+    }
+    .sec02 .works {
+        position: relative;
+        margin-bottom: 50px;
+        text-align: center;
+        color: #fff;
+        font-family: Noto Serif;
+        font-size: 3rem;
+        letter-spacing: 3px;
+        font-style: italic
+    }
+    .sec02 .works::before {
+        content: "";
+        display: inline-block;
+        width: 100px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        top: 15px;
+        left: 320px;
+    }
+    .sec02 .works_list_box {
+        width: 98%;
+        padding-bottom: 10px;
+        margin: 0 auto 30px;
+        background-color: #fff;
+    }
+    .sec02 .works_list1 {
+        margin: 30px;
+        font-size: 1.6rem;
+        letter-spacing: 1.8px;
+        line-height: 30px;
+    }
+    .sec02 .yellow {
+        display: block;
+        width: 300px;
+        margin: 60px auto 50px;
+        padding: 30px 0;
+        border-radius: 50px;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        border: none;
+        outline: none;
+        background-color: #F7D43F;
+    }
+    .sec02 .skele {
+        text-align: left;
+        letter-spacing: 2px;
+        opacity: 10%;
+        font-size: 4rem;
+        font-weight: bold;
+        color: #fff;
+    }
+    .sec02 img {
+        width: 100%;
+    }
+}
+/* PC版 */
+@media screen and (min-width: 768px) {
+    .sec02 {
+        position: relative;
+        padding: 104px 0 70px;
+        background-image: url("E:/クリスタ img/fv-bgi_02.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .sec02::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 50%;
+        background-color: #282F35;
+    }
+    .sec02 .works_box {
+        z-index: 10;
+        position: relative;
+    }
+    .sec02 .works {
+        position: absolute;
+        top: -100px;
+        right: 33%;
+        color: #fff;
+        letter-spacing: 0.1em;
+        text-align: right;
+        font-size: 6rem;
+        font-style: italic;
+        font-family: Noto serif;
+    }
+    .sec02 .works::after {
+        content: "";
+        display: inline-block;
+        width: 200px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        top: 30px;
+        right: -250px;
+    }
+    .sec02 .works_list {
+        justify-content: center;
+        margin: 80px auto;
+        max-width: 1100px;
+        display: flex;
+    }
+    .sec02 .works_list_box {
+        max-width: 32%;
+        line-height: 0;
+        margin: 0 10px;
+        background-color: #fff;
+    }
+    .sec02 .works_list1 {
+        padding: 30px 20px 40px;
+        font-size: 1.6rem;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+    }
+    .sec02 .yellow {
+        display: block;
+        padding: 30px 100px;
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+        outline: none;
+        border-radius: 50px;
+        border: none;
+        font-size: 1.6rem;
+        letter-spacing: 0.05em;
+        background-color: #F7D43F;
+    }
+    .sec02 .skele {
+        margin: 70px 0 0 120px;
+        font-size: 9rem;
+        letter-spacing: 0.05em;
+        opacity: 10%;
+        color: #fff;
+    }
+    .sec02 img {
+        width: 100%;
+    }
+}
+/* スマホ版 */
+@media screen and (max-width: 768px) {
+    .sec03 {
+        padding: 100px 0 64px;
+    }
+    .sec03 .service {
+        position: relative;
+        margin: 0 0 30px 30px;
+        font-size: 3rem;
+        font-family: Noto serif;
+        font-style: italic;
+        letter-spacing: 0,1em;
+    }
+    .sec03 .service::after {
+        content: "";
+        display: inline-block;
+        width: 90px;
+        height: 5px;
+        background-color: #000;
+        position: absolute;
+        top: 15px;
+        left: 150px;
+    }
+    .sec03 .service_list {
+        position: relative;
+    }
+    .sec03 .imgIn {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        font-size: 2rem;
+        font-family: Noto serif;
+        font-style: italic;
+        letter-spacing: 0.05em;
+        color: #fff;
+    }
+    .sec03 img {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .sec03 .skele {
+        text-align: right;
+        margin: 70px 30px 0 0;
+        font-size: 4rem;
+        letter-spacing: 0.05em;
+        opacity: 10%;
+        color: #000;
+    }
+    .sec03 .service_list_pc {
+        display: none;
+    }
+}
+/* PC版 */
+@media screen and (min-width: 768px) {
+    .sec03 {
+        padding: 74px 0 70px;
+    }
+    .sec03 .service {
+        position: relative;
+        margin-left: 220px;
+        font-size: 6rem;
+        font-family: Noto serif;
+        font-style: italic;
+        letter-spacing: 0.1em;
+    }
+    .sec03 .service::after {
+        content: "";
+        display: inline-block;
+        width: 200px;
+        height: 5px;
+        background-color: #000;
+        position: absolute;
+        top: 30px;
+        left: 300px;
+    }
+    .sec03 .service_box_list {
+        display: none;
+    }
+    .sec03 .service_list_box_pc {
+        display: flex;
+        margin: 80px 0 70px;
+        width: 100%;
+    }
+    .sec03 .service_item {
+        width: 33%;
+        text-align: center;
+        list-style: none;
+    }
+    .sec03 .service_item:nth-child(1) {
+        background-image: url("E:/クリスタ img/中級編 pc/service-img01.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .sec03 .service_item:nth-child(2) {
+        background-image: url("E:/クリスタ img/中級編 pc/service-img02.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .sec03 .service_item:nth-child(3) {
+        background-image: url("E:/クリスタ img/中級編 pc/sevice-img03.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .sec03 a {
+        display: block;
+        width: 100%;
+        line-height: 320px;
+        font-size: 4rem;
+        color: #fff;
+        font-family: Noto serif;
+        font-style: italic;
+        letter-spacing: 0.05em;
+        text-decoration: none;
+        transition: .3s;
+    }
+    .sec03 a:hover {
+        background-color: rgba(40,47,53,.7);
+        transition: .3s;
+    }
+    .sec03 .imgIn {
+        /* position: absolute;
+        top: 40%;
+        left: 35%;
+        font-size: 4rem;
+        color: #fff;
+        font-family: Noto serif;
+        font-style: italic;
+        letter-spacing: 0.05em; */
+    }
+    .sec03 .skele {
+        opacity: 10%;
+        text-align: right;
+        font-size: 9rem;
+        font-family: Noto serif;
+        letter-spacing: 0.05em;
+    }
+}
+/* スマホ版 */
+@media screen and (max-width: 768px) {
+    .sec04 {
+        position: relative;
+        padding: 100px 15px 40px;
+        background-image: url("E:/クリスタ img/fv-bgi_01.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .sec04::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 70%;
+        background-color: rgb(59, 61, 61);
+    }
+    .sec04 .contact_box {
+        z-index: 1;
+        position: relative;
+    }
+    .sec04 .contact {
+        position: relative;
+        margin: 0 0 80px 120px;
+        font-size: 3rem;
+        font-family: Noto serif;
+        font-style: italic;
+        letter-spacing: 0.1em;
+        color: #fff;
+    }
+    .sec04 .contact::after {
+        content: "";
+        display: inline-block;
+        width: 100px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        top: 15px;
+        left: 180px;
+    }
+    .sec04 p {
+        text-align: center;
+        margin: 0 0 40px;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        color: #fff;
+    }
+    .sec04 .yellow {
+        display: block;
+        padding: 30px 100px;
+        margin: 0 auto;
+        width: 300px;
+        text-align: center;
+        outline: none;
+        border-radius: 50px;
+        border: none;
+        font-size: 1.6rem;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        background-color: #F7D43F;
+    }
+    .sec04 .skele {
+        margin-top: 70px;
+        text-align: left;
+        letter-spacing: 2px;
+        opacity: 10%;
+        font-size: 4rem;
+        font-weight: bold;
+        color: #fff;
+    }
+}
+/* PC版 */
+@media screen and (min-width: 768px) {
+    .sec04 {
+        position: relative;
+        background-image: url("E:/クリスタ img/fv-bgi_01.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 109px 0 70px ;
+    }
+    .sec04::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 50%;
+        background-color: #282F35;
+    }
+    .sec04 .contact_box {
+        z-index: 5;
+        position: relative;
+    }
+    .sec04 .contact {
+        position: absolute;
+        top: -250px;
+        right: 33%;
+        font-size: 6rem;
+        letter-spacing: 0.1em;
+        font-family: Noto serif;
+        font-style: italic;
+        color: #fff;
+    }
+    .sec04 .contact::after {
+        content: "";
+        display: inline-block;
+        width: 200px;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;
+        top: 30px;
+        right: -250px;
+    } 
+    .sec04 p {
+        margin: 250px 0 40px;
+        text-align: center;
+        font-size: 2rem;
+        letter-spacing: 0.05em;
+        font-weight: bold;
+        color: #fff;
+    }
+    .sec04 .yellow {
+        display: block;
+        margin: 0 auto;
+        padding: 20px 85px;
+        width: 235px;
+        border-radius: 50px;
+        border: none;
+        font-size: 1.6em;
+        font-family: Noto serif;
+        letter-spacing: 0.05em;
+        background-color: #F7D43F;
+    }
+    .sec04 .skele {
+        margin: 70px 0 0 120px;
+        font-size: 9rem;
+        font-family: Noto serif;
+        letter-spacing: 0.05em;
+        opacity: 20%;
+        color: #fff
+    }
+}
+/* スマホ版 */
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 30px;
+    }
+    footer p {
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+    }
+}
+/* PC版 */
+@media screen and (min-width: 768px) {
+    footer {
+        padding: 30px 0;
+    }
+    footer p {
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+    }
+}
+/* スマホ版 */
+@media screen and (max-width: 768px) {
+
+}
+/* PC版 */
+@media screen and (min-width: 768px) {
+
+}
+/* スマホ版 */
+@media screen and (max-width: 768px) {
+
+}
+/* PC版 */
+@media screen and (min-width: 768px) {
+
+}
+/* スマホ版 */
+@media screen and (max-width: 768px) {
+
+}
+/* PC版 */
+@media screen and (min-width: 768px) {
+
+}
+/* スマホ版 */
+@media screen and (max-width: 768px) {
+
+}
+/* PC版 */
+@media screen and (min-width: 768px) {
+
+}
