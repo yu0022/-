@@ -214,7 +214,7 @@ html {
    .fv {
         position: relative;
         height: 599px;
-        background-image: url("fv-bgi_01.jpg");
+        background-image: url("/Dezaincanp/中級編 pc/fv-bgi_01.jpg");
         background-position: center;
         background-size: cover;
    }
@@ -456,7 +456,7 @@ html {
     .sec02 {
         position: relative;
         padding: 100px 15px 40px;
-        background-image: url("https://yu0022.github.io/Dezaincanp/中級編 pc/fv-bgi_02.jpg");
+        background-image: url("/Dezaincanp/中級編 pc/fv-bgi_02.jpg");
         background-position: top;
         background-size: cover;
     }
@@ -535,7 +535,7 @@ html {
     .sec02 {
         position: relative;
         padding: 104px 0 70px;
-        background-image: url("https://yu0022.github.io/Dezaincanp/中級編 pc/fv-bgi_02.jpg");
+        background-image: url("/Dezaincanp/中級編 pc/fv-bgi_02.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -706,7 +706,7 @@ html {
         list-style: none;
     }
     .sec03 .service_item:nth-child(1) {
-        background-image: url("https://yu0022.github.io/Dezaincanp/中級編 pc/service-img01.jpg");
+        background-image: url("/Dezaincanp/中級編 pc/service-img01.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
