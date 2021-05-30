@@ -214,7 +214,7 @@ html {
    .fv {
         position: relative;
         height: 599px;
-        background-image: url("E:/クリスタ img/fv-bgi_01.jpg");
+        background-image: url("fv-bgi_01.jpg");
         background-position: center;
         background-size: cover;
    }
