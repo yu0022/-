@@ -706,7 +706,7 @@ html {
         list-style: none;
     }
     .sec03 .service_item:nth-child(1) {
-        background-image: url("Dezaincanp/中級編 pc/service-img01.jpg");
+        background-image: url("中級編 pc\service-img01.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -762,7 +762,7 @@ html {
     .sec04 {
         position: relative;
         padding: 100px 15px 40px;
-        background-image: url("fv-bgi_01.jpg");
+        background-image: url("中級編 pc\fv-bgi_01.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -836,7 +836,7 @@ html {
 @media screen and (min-width: 768px) {
     .sec04 {
         position: relative;
-        background-image: url("fv-bgi_01.jpg");
+        background-image: url("中級編 pc\fv-bgi_01.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
