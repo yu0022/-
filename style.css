@@ -706,19 +706,19 @@ html {
         list-style: none;
     }
     .sec03 .service_item:nth-child(1) {
-        background-image: url("中級編 pc/service-img01.jpg");
+        background-image: url("Dezaincanp/中級編 pc/service-img01.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
     .sec03 .service_item:nth-child(2) {
-        background-image: url("中級編 pc/service-img02.jpg");
+        background-image: url("中級編 pc\service-img02.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
     .sec03 .service_item:nth-child(3) {
-        background-image: url("中級編 pc/sevice-img03.jpg");
+        background-image: url("中級編 pc\sevice-img03.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
